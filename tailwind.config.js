@@ -3,8 +3,8 @@ const config =  {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
-        md: "2rem",
+        DEFAULT: "0.8rem",
+        md: "1.5rem",
         lg: "3rem",
       },
       screens: {
