@@ -48,22 +48,22 @@ const teamMembers: teamMemberProp[] = [
     {
         name: "Donatus Oduopara",
         role: "Managing Director",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/donatus-oduopara-4a943940",
     },
     {
         name: "Cyprian Orakpo",
         role: "Board Chairman",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/cyprian-orakpo-93291446",
     },
     {
         name: "Peter Jude Osuji",
         role: "Legal P.R.O",
-        linkedIn: "#",
+        linkedIn: "https://linkedin.com/in/peter-jude-osuji-llb-bl-aciarb-uk-aicmc-notary-public-44b25b21",
     },
     {
         name: "Blessing Oduopara",
         role: "Admin. Director",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/blessing-oduopara-10485777",
     },
     {
         name: "Muideen Jimoh",
@@ -73,27 +73,27 @@ const teamMembers: teamMemberProp[] = [
     {
         name: "Uyomi. O Eya",
         role: "R & D Manager",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/uyomi-eya-aa840a150",
     },
     {
         name: "Mercy Echeruo",
         role: "Marketing",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/mercy-oluchi-echeruo-82843b77",
     },
     {
         name: "Emmanuel Eneh",
         role: "H.O.D Reality Capture",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/emmanuel-eneh-cswp",
     },
     {
         name: "Chinemere Nwadinobi",
         role: "H.O.D Project mgt.",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/chinemerem-nwadinobi",
     },
     {
         name: "Oluwaseyi Ogunrinola",
         role: "I.T Support",
-        linkedIn: "#",
+        linkedIn: "https://www.linkedin.com/in/oluwaseyiogunrinola",
     },
 ];
 

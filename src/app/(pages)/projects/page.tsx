@@ -1,17 +1,8 @@
-"use client";
-
 import ContactCard from "@/components/shared/ContactCard";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { projects } from "@/utils/data/projectData";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-
 const Page = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
   return (
     <>
       <section className="container pt-7.5 lg:pt-15 ">
@@ -46,7 +37,10 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <ContactCard />
+      <ContactCard
+        header="Ready to bring your project to life with precision, safety, and efficiency?"
+        description="Get in touch with us today."
+      />
     </>
   );
 };

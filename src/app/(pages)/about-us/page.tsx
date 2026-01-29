@@ -1,21 +1,24 @@
-"use client";
-
 import Image from "next/image";
-
 import Link from "next/link";
 import ContactCard from "@/components/shared/ContactCard";
-import { useEffect } from "react";
+import {
+  aboutUsContent,
+  coreValues,
+  teamMembers,
+} from "@/utils/data/aboutUsData";
+import { Metadata } from "next";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { aboutUsContent, coreValues, teamMembers } from "@/utils/data/aboutUsData";
-
+export const metadata: Metadata = {
+  title: "About us",
+  description: `BuildSafe Nigeria Ltd (BNL) is a leading indigenous engineering
+              consultancy, project management, and reality capture service
+              provider in Nigeria. In pursuit of excellence, we consistently
+              deliver services that meet and exceed customer expectations while
+              complying with all applicable statutory and regulatory
+              requirements.`,
+};
 
 const Page = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <>
       <div className="container pt-7.5 lg:pt-15 overflow-hidden">
@@ -66,7 +69,7 @@ const Page = () => {
               data-aos-delay="400"
               className={`flex flex-col md:flex-row items-center justify-between gap-10  ${idx !== 0 && "md:flex-row-reverse"}`}
             >
-              <div className="flex flex-col gap-4 max-w-130">
+              <div className="flex flex-col gap-2 max-w-130">
                 <p className="heading-2">{header}</p>
                 <p className="text-grey">{description}</p>
               </div>
@@ -75,12 +78,16 @@ const Page = () => {
                 data-aos-duration="1000"
                 className="relative min-h-67.5 lg:min-h-80 h-full min-w-65 w-full"
               >
-                <Image src={imgUrl!} alt="Vision" className="object-contain h-full w-full" />
+                <Image
+                  src={imgUrl!}
+                  alt="Vision"
+                  className="object-contain h-full w-full"
+                />
               </div>
             </div>
           ))}
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
             <p className="heading-2">our core values</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-9">
@@ -104,7 +111,7 @@ const Page = () => {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 md:gap-8">
+          <div className="flex flex-col gap-2 md:gap-3">
             <p data-aos="fade-up" data-aos-duration="900" className="heading-2">
               meet our team
             </p>
@@ -136,7 +143,11 @@ const Page = () => {
                   </div>
                   <p className=" text-lg font-semibold capitalize">{name}</p>
                   <p className="text-sm capitalize">{role}</p>
-                  <Link className="relative size-5" href={linkedIn}>
+                  <Link
+                    className="relative size-5"
+                    href={linkedIn}
+                    target="_blank"
+                  >
                     <Image
                       src={"/icons/linkedIn-blue.svg"}
                       alt="linkedIn-icon"
@@ -149,7 +160,10 @@ const Page = () => {
           </div>
         </div>
       </div>
-      <ContactCard />
+      <ContactCard
+        header="Need Accurate Site Data for Your Project?"
+        description="Talk to our team about laser scanning, drone surveys, and 3D site capture tailored to your project requirements."
+      />
     </>
   );
 };

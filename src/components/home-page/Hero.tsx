@@ -21,7 +21,7 @@ const Hero = () => {
               and reality capture services across Nigeria, with a commitment to
               quality, safety, and excellence.
             </p>
-            <Link href={"/service"}>
+            <Link href={"/services"}>
               <button className="bg-primary text-white rounded-xl flex items-center gap-2 py-1.5 px-2.5 text-xs md:text-sm custom-hover">
                 <span>Explore Services</span>
                 <span className="rounded-full px-1 text-lg bg-white text-primary">

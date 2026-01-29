@@ -23,15 +23,15 @@ import { footerLinkProp } from "@/interfaces/interface";
       links: [
         {
           label: "Structural Engineering",
-          href: "#",
+          href: "/services?tab=engineering_consultancy",
         },
         {
           label: "BIM & Digital Engineering",
-          href: "#",
+          href: "/services?tab=project_management",
         },
         {
           label: "Reality Capture",
-          href: "#",
+          href: "/services?tab=reality_capture",
         },
       ],
     },
@@ -70,19 +70,19 @@ import { footerLinkProp } from "@/interfaces/interface";
     },
     {
       label: "facebook",
-      href: "#",
+      href: "https://www.facebook.com/profile.php?id=100063653374752",
     },
     {
       label: "youtube",
-      href: "#",
+      href: "https://www.youtube.com/@buildsafenigerialimited4751",
     },
     {
       label: "X",
-      href: "#",
+      href: "https://twitter.com/Buildsafeng",
     },
     {
       label: "linkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/buildsafe-nigeria-ltd/mycompany/",
     },
   ];
 

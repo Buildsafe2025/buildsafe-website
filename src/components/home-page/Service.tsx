@@ -13,7 +13,7 @@ const Service = () => {
       >
         <div className="flex justify-between">
           <p className="heading-2 text-2xl! inline-block align-bottom">Service Category</p>
-          <Link href={"/service"} className="btn-secondary ">
+          <Link href={"/services"} className="btn-secondary ">
             view all <span className="hidden md:inline-flex">services</span>
           </Link>
         </div>
@@ -26,7 +26,7 @@ const Service = () => {
           {services.map(({ imgUrl, header, description }, i) => (
             <Link
               key={i}
-              href={`/service?tab=${header.toLowerCase().replace(" ", "_")}`}
+              href={`/services?tab=${header.toLowerCase().replace(" ", "_")}`}
               className="relative "
             >
               <ServiceCard

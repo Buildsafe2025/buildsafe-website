@@ -15,8 +15,12 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "BuildSafe",
-  description: "Building Next Generation app...",
+  title: {
+    template: "%s | Buildsafe",
+    default: "Buildsafe - Expert In Building and Engineering Consultancy",
+  },
+  description:
+    "Delivering top-tier engineering consultancy, project management, and reality capture services across Nigeria, with a commitment to quality, safety, and excellence.",
 };
 
 export default function RootLayout({
