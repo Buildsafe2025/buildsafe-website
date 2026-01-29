@@ -10,8 +10,6 @@ import {
 import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
 import ContactCard from "@/components/shared/ContactCard";
 
 interface tabProp {
@@ -20,7 +18,7 @@ interface tabProp {
   data: serviceProp[];
 }
 
-const Page = () => {
+const ServicePage = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
@@ -60,7 +58,6 @@ const Page = () => {
   };
 
   useEffect(() => {
-    AOS.init();
     if (tab === null) {
       params.set("tab", activeTab);
     } else {
@@ -72,7 +69,6 @@ const Page = () => {
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <>
       <section className="container pt-7.5 lg:pt-15 ">
@@ -88,7 +84,7 @@ const Page = () => {
 
           <div className="flex gap-2 md:gap-4 lg:gap-5 overflow-x-scroll lg:overflow-hidden custom-scrollbar">
             {tabs.map(({ id, label }) => (
-              <div key={id} className="w-full flex-1 min-w-60" >
+              <div key={id} className="w-full flex-1 min-w-60">
                 <button
                   onClick={() => changeTab(id)}
                   className={` text-xs md:text-base rounded-full py-2 px-1.75 md:py-4 md:px-5 text-center w-full ${activeTab === id ? "bg-primary text-white font-semibold" : "text-grey bg-white border-light-grey border-[1.5px]"}`}
@@ -120,9 +116,12 @@ const Page = () => {
         </div>
       </section>
 
-      <ContactCard />
+      <ContactCard
+        header="Ready to Deliver Projects On Time and On Budget?"
+        description="Streamline your project from planning to completion with professional project management services. We manage risks, costs, schedules, and coordination for smooth execution."
+      />
     </>
   );
 };
 
-export default Page;
+export default ServicePage;
