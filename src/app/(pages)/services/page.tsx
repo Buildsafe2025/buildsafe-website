@@ -1,6 +1,7 @@
 import ServicePage from "@/components/service-page/ServicePage";
 
 import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
 };
 
 const Page = () => {
-  return <ServicePage />;
+  return (
+    <Suspense fallback={null}>
+      <ServicePage />
+    </Suspense>
+  );
 };
 
 export default Page;
