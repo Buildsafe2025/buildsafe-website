@@ -11,4 +11,16 @@ export const quotes = [
       name: "Ken Bob Iwe",
       role: "MD NATUHAB",
     },
+    {
+      quote:
+        "We couldn't be happier with the outstanding work done by  Buildsafe on our medical production facility project. From design to execution, they delivered perfection. Their team’s expertise, attention to detail, and commitment to quality were exceptional. Despite tight deadlines and complex requirements, they ensured a world-class facility that exceeded our expectations. Their project management skills kept everything on track, and their engineering prowess solved every challenge. We were thrilled with the result – a state-of-the-art facility that’s already boosting our production capacity. If you're looking for a trusted partner for your engineering and project management needs, look no further.",
+      name: "Mr. Cyprian Orakpo",
+      role: "Managing Director, Transgreen Nigeria Limited",
+    },
+    {
+      quote:
+        "Buildsafe has been our trusted partner for over a decade, consistently delivering top-notch engineering consultancy, project management, and asset digitization services. Their unwavering commitment to quality, speed, and safety compliance is unmatched. We've relied on them for complex projects, and they've always found a solution, no matter the challenge. Their expertise and can-do attitude have been invaluable to our business.",
+      name: "Engr Adetomiwa Fesobi",
+      role: "Project Manager, Coca-Cola HBC, Nigeria",
+    },
   ];

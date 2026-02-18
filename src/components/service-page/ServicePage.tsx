@@ -27,7 +27,7 @@ const ServicePage = () => {
 
   const tabs: tabProp[] = [
     {
-      id: "engineering_consultancy",
+      id: "construction_engineering_consultancy",
       label: "Engineering Consultancy",
       data: engineeringConsultancy,
     },
@@ -44,7 +44,7 @@ const ServicePage = () => {
   ];
 
   const [activeTab, setActiveTab] = useState<string>(
-    tab === null ? "engineering_consultancy" : tab,
+    tab === null ? "construction_engineering_consultancy" : tab,
   );
 
   const changeTab = (tab: string) => {

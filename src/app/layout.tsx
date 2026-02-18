@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: {
     template: "%s | Buildsafe",
-    default: "Buildsafe - Expert In Building and Engineering Consultancy",
+    default: "Buildsafe - Expert In Construction Engineering Consultancy, Project Management and Reality Capture",
   },
   description:
     "Delivering top-tier engineering consultancy, project management, and reality capture services across Nigeria, with a commitment to quality, safety, and excellence.",

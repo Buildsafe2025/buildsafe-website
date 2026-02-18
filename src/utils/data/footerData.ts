@@ -16,39 +16,26 @@ import { footerLinkProp } from "@/interfaces/interface";
           label: "Services",
           href: "/services",
         },
+        {
+          label: "Projects",
+          href: "/projects",
+        },
       ],
     },
     {
       header: "Services",
       links: [
         {
-          label: "Structural Engineering",
+          label: "Construction Engineering Consultancy",
           href: "/services?tab=engineering_consultancy",
         },
         {
-          label: "BIM & Digital Engineering",
+          label: "Project Management",
           href: "/services?tab=project_management",
         },
         {
           label: "Reality Capture",
           href: "/services?tab=reality_capture",
-        },
-      ],
-    },
-    {
-      header: "Reality Capture",
-      links: [
-        {
-          label: "Laser Scanning",
-          href: "/",
-        },
-        {
-          label: "Drone Survey",
-          href: "#",
-        },
-        {
-          label: "Scan-to-BIM",
-          href: "#",
         },
       ],
     },
@@ -66,7 +53,7 @@ import { footerLinkProp } from "@/interfaces/interface";
   const socialMediaLinks = [
     {
       label: "whatsapp",
-      href: "#",
+      href: "https://wa.link/pn7ous",
     },
     {
       label: "facebook",

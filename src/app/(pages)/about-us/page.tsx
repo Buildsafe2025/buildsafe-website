@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import ContactCard from "@/components/shared/ContactCard";
+import aboutUs from "@public/images/about-us.png";
 import {
   aboutUsContent,
   coreValues,
@@ -55,9 +56,13 @@ const Page = () => {
             <div
               data-aos="fade-left"
               data-aos-duration="1000"
-              className="bg-grey rounded-xl h-67.5 md:h-125 w-full "
+              className="rounded-xl h-67.5 md:h-125 w-full "
             >
-              &nbsp;
+              <Image
+                src={aboutUs}
+                alt="Vision"
+                className="object-cover h-full w-full"
+              />
             </div>
           </div>
 
@@ -126,8 +131,10 @@ const Page = () => {
             </p>
 
             <div className="grid grid-col-1 md:grid-cols-4 lg:grid-cols-5 md:gap-x-10 gap-y-7.5 md:gap-y-15">
-              {teamMembers.map(({ name, role, linkedIn }, idx) => (
-                <div
+              {teamMembers.map(({ name, role, linkedIn, imgUrl }, idx) => (
+                <Link
+                  href={linkedIn}
+                  target="_blank"
                   data-aos="zoom-in-up"
                   data-aos-duration="1000"
                   key={idx}
@@ -135,7 +142,7 @@ const Page = () => {
                 >
                   <div className="relative rounded-full size-30">
                     <Image
-                      src={`/images/team/${name.split(" ")[0].toLowerCase()}.png`}
+                      src={imgUrl}
                       alt={name}
                       fill
                       className="rounded-full"
@@ -143,18 +150,14 @@ const Page = () => {
                   </div>
                   <p className=" text-lg font-semibold capitalize">{name}</p>
                   <p className="text-sm capitalize">{role}</p>
-                  <Link
-                    className="relative size-5"
-                    href={linkedIn}
-                    target="_blank"
-                  >
+                  <div className="relative size-5">
                     <Image
                       src={"/icons/linkedIn-blue.svg"}
                       alt="linkedIn-icon"
                       fill
                     />
-                  </Link>
-                </div>
+                  </div>
+                </Link>
               ))}
             </div>
           </div>

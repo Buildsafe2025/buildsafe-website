@@ -4,7 +4,7 @@ import TextBox from "@/components/shared/TextBox";
 import { socialMediaLinks } from "@/utils/data/footerData";
 import Image from "next/image";
 import Link from "next/link";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 interface contactDetailsProp {
   iconUrl: string;
@@ -33,17 +33,53 @@ const contactDetails: contactDetailsProp[] = [
   },
 ];
 const ContactPage = () => {
-  const submitEnquiry = (e: FormEvent) => {
+  const [loading, setLoading] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>("");
+  const submitEnquiry = async (e: FormEvent) => {
     e.preventDefault();
+    setLoading(true);
 
-    // const formData = new FormData(e.target as HTMLFormElement);
+    const form = e.target as HTMLFormElement;
 
-    // const firstName = formData.get("firstName");
-    // const lastName = formData.get("lastName");
-    // const email = formData.get("email");
-    // const phoneNumber = formData.get("phoneNumber");
-    // const service = formData.get("service");
-    // const details = formData.get("details");
+    const formData = new FormData(form);
+
+    const firstName = formData.get("firstName");
+    const lastName = formData.get("lastName");
+    const email = formData.get("email");
+    const phoneNumber = formData.get("phoneNumber");
+    const service = formData.get("service");
+    const details = formData.get("details");
+
+    const payload = JSON.stringify({
+      firstName,
+      lastName,
+      email,
+      phoneNumber,
+      service,
+      details,
+    });
+
+    try {
+      
+      const response = await fetch("/api/enquiry", {
+        method: "POST",
+        body: payload,
+      });
+
+      const isSuccess = await response.json();
+
+      if (!isSuccess.success) return;
+
+      setMessage("Email Sent Successfully!");
+      setTimeout(() => {
+        setMessage("");
+      }, 2000);
+    } catch (error) {
+      setMessage("An Error occurred while sending form. Please try again");
+      console.log("Error: ", error);
+    }
+    form.reset();
+    setLoading(false);
   };
 
   return (
@@ -174,13 +210,42 @@ const ContactPage = () => {
               ></textarea>
               <p className="text-sm text-right">Max 250 Chars</p>
             </div>
+            <p className="">{message}</p>
 
             <div className="flex justify-center ">
               <button
                 type="submit"
                 className="btn-primary w-full lg:max-w-40 custom-hover"
+                disabled={loading}
               >
-                Submit Inquiry
+                {loading ? (
+                  <div className=" flex items-center justify-center">
+                    <svg
+                      className="animate-spin"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="35px"
+                      height="35px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#fff"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path d="M21 12a9 9 0 11-6.219-8.56"></path>
+                      </g>
+                    </svg>
+                  </div>
+                ) : (
+                  "Submit Inquiry"
+                )}
               </button>
             </div>
           </form>

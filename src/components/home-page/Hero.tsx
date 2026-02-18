@@ -11,13 +11,13 @@ const Hero = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="max-w-130 w-full flex flex-col gap-6"
+            className=" max-w-170 w-full flex flex-col gap-6"
           >
             <h1 className="heading-1">
-              Expert In Building and Engineering Consultancy
+              Expert In Construction Engineering Consultancy, Project Management and Reality Capture
             </h1>
             <p className='text-sm md:text-base'>
-              Delivering top-tier engineering consultancy, project management,
+              Delivering top-tier construction engineering consultancy, project management,
               and reality capture services across Nigeria, with a commitment to
               quality, safety, and excellence.
             </p>

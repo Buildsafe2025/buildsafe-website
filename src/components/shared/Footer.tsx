@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section className="pt-16 md:pt-32 container pb-4 md:pb-8">
       <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
-        <div className="col-span-2 pb-5 md:pb-0">
+        <div className="col-span-3 pb-5 md:pb-0">
           <div className="flex flex-col gap-3">
             <div className="relative size-20">
               <Image
@@ -45,6 +45,7 @@ const Footer = () => {
               <Link
                 key={idx}
                 href={href}
+                target="_blank"
                 className="text-grey hover:underline "
               >
                 {label}

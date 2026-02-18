@@ -14,9 +14,9 @@ export type serviceProp = {
 export interface projectCardProp {
   header: string;
   description: string;
-  clientName: string;
+  clientName?: string;
   scope: string;
-  imgUrl?: string;
+  imgUrl: StaticImageData;
 };
 
 export type footerLinkProp = {
@@ -38,4 +38,5 @@ export type teamMemberProp = {
   name: string;
   role: string;
   linkedIn: string;
+  imgUrl: StaticImageData;
 };

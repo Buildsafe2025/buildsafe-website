@@ -6,11 +6,11 @@ const Offer = () => {
     const offers: offerProp[] = [
     {
       label: "years of experience",
-      number: 12,
+      number: 13,
     },
     {
       label: "project completed",
-      number: 347,
+      number: 538,
     },
     {
       label: "year founded",
