@@ -43,27 +43,24 @@ const ContactPage = () => {
 
     const formData = new FormData(form);
 
-    const firstName = formData.get("firstName");
-    const lastName = formData.get("lastName");
-    const email = formData.get("email");
-    const phoneNumber = formData.get("phoneNumber");
-    const service = formData.get("service");
-    const details = formData.get("details");
-
-    const payload = JSON.stringify({
-      firstName,
-      lastName,
-      email,
-      phoneNumber,
-      service,
-      details,
-    });
+    const firstName = formData.get("firstName") as string;
+    const lastName = formData.get("lastName") as string;
+    const email = formData.get("email") as string;
+    const phoneNumber = formData.get("phoneNumber") as string;
+    const service = formData.get("service") as string;
+    const details = formData.get("details") as string;
 
     try {
-      
-      const response = await fetch("/api/enquiry", {
+      const response = await fetch("/send-mail.php", {
         method: "POST",
-        body: payload,
+        body: new URLSearchParams({
+          firstName,
+          lastName,
+          email,
+          phoneNumber,
+          service,
+          details,
+        }).toString(),
       });
 
       const isSuccess = await response.json();
@@ -75,8 +72,8 @@ const ContactPage = () => {
         setMessage("");
       }, 2000);
     } catch (error) {
+      console.error(error)
       setMessage("An Error occurred while sending form. Please try again");
-      console.log("Error: ", error);
     }
     form.reset();
     setLoading(false);
