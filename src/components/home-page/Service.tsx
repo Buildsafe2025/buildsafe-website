@@ -26,7 +26,7 @@ const Service = () => {
           {services.map(({ imgUrl, header, description }, i) => (
             <Link
               key={i}
-              href={`/services?tab=${header.toLowerCase().replace(" ", "_")}`}
+              href={`/services?tab=${header.toLowerCase().replaceAll(" ", "_")}`}
               className="relative "
             >
               <ServiceCard

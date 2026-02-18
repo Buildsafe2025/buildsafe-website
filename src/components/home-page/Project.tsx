@@ -31,13 +31,14 @@ const Project = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-7">
           {projects
             .slice(0, 3)
-            .map(({ header, description, clientName, scope }, i) => (
+            .map(({ header, description, clientName, scope, imgUrl }, i) => (
               <ProjectCard
                 key={i}
                 header={header}
                 description={description}
                 clientName={clientName}
                 scope={scope}
+                imgUrl={imgUrl}
               />
             ))}
         </div>

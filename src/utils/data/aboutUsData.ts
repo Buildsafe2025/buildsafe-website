@@ -2,6 +2,18 @@ import visionImg from "@public/images/our-vision.png";
 import missionImg from "@public/images/our-mission.png";
 import { aboutUsProp, teamMemberProp } from "@/interfaces/interface";
 
+import cyprian from "@public/images/team/cyprian.png";
+import blessing from "@public/images/team/blessing.png";
+import chinemere from "@public/images/team/chinemere.png";
+import donatus from "@public/images/team/donatus.png";
+import emmanuel from "@public/images/team/emmanuel.png";
+import mercy from "@public/images/team/mercy.png";
+import muideen from "@public/images/team/muideen.png";
+import oluwaseyi from "@public/images/team/oluwaseyi.png";
+import peter from "@public/images/team/peter.png";
+import uyomi from "@public/images/team/uyomi.png";
+import blessingO from "@public/images/team/blessing-obiageri.png";
+
 const aboutUsContent: aboutUsProp[] = [
     {
         header: "our vision",
@@ -46,54 +58,74 @@ const coreValues: aboutUsProp[] = [
 ];
 const teamMembers: teamMemberProp[] = [
     {
-        name: "Donatus Oduopara",
-        role: "Managing Director",
-        linkedIn: "https://www.linkedin.com/in/donatus-oduopara-4a943940",
-    },
-    {
         name: "Cyprian Orakpo",
         role: "Board Chairman",
+        imgUrl: cyprian,
         linkedIn: "https://www.linkedin.com/in/cyprian-orakpo-93291446",
+    }, 
+    {
+        name: "Donatus Oduopara",
+        role: "Managing Director",
+        imgUrl: donatus,
+        linkedIn: "https://www.linkedin.com/in/donatus-oduopara-4a943940",
     },
+
     {
         name: "Peter Jude Osuji",
-        role: "Legal P.R.O",
+        role: "Head, Legal & Public Relation",
+        imgUrl: peter,
         linkedIn: "https://linkedin.com/in/peter-jude-osuji-llb-bl-aciarb-uk-aicmc-notary-public-44b25b21",
     },
     {
         name: "Blessing Oduopara",
-        role: "Admin. Director",
+        role: "Administrative Director",
+        imgUrl: blessing,
         linkedIn: "https://www.linkedin.com/in/blessing-oduopara-10485777",
     },
     {
-        name: "Muideen Jimoh",
-        role: "Surveyor",
-        linkedIn: "#",
+        name: "Chinemere Nwadinobi",
+        role: "Head, Engineering & Project Management",
+        imgUrl: chinemere,
+        linkedIn: "https://www.linkedin.com/in/chinemerem-nwadinobi",
     },
-    {
-        name: "Uyomi. O Eya",
-        role: "R & D Manager",
-        linkedIn: "https://www.linkedin.com/in/uyomi-eya-aa840a150",
-    },
-    {
-        name: "Mercy Echeruo",
-        role: "Marketing",
-        linkedIn: "https://www.linkedin.com/in/mercy-oluchi-echeruo-82843b77",
-    },
+    
     {
         name: "Emmanuel Eneh",
         role: "H.O.D Reality Capture",
+        imgUrl: emmanuel,
         linkedIn: "https://www.linkedin.com/in/emmanuel-eneh-cswp",
     },
     {
-        name: "Chinemere Nwadinobi",
-        role: "H.O.D Project mgt.",
-        linkedIn: "https://www.linkedin.com/in/chinemerem-nwadinobi",
+        name: "Uyomi. O Eya",
+        role: "Head, Research & Innovation",
+        imgUrl: uyomi,
+        linkedIn: "https://www.linkedin.com/in/uyomi-eya-aa840a150",
     },
+    
+    {
+        name: "Muideen Jimoh",
+        role: "Head, Quantity Surveying",
+        imgUrl: muideen,
+        linkedIn: "#",
+    },
+    {
+        name: "Mercy Echeruo",
+        role: "Head, Marketing & Communication",
+        imgUrl: mercy,
+        linkedIn: "https://www.linkedin.com/in/mercy-oluchi-echeruo-82843b77",
+    },
+    
     {
         name: "Oluwaseyi Ogunrinola",
         role: "I.T Support",
+        imgUrl: oluwaseyi,
         linkedIn: "https://www.linkedin.com/in/oluwaseyiogunrinola",
+    },
+    {
+        name: "Blessing Obiageri Ugbede",
+        role: "Head of Finance",
+        imgUrl: blessingO,
+        linkedIn: "https://www.linkedin.com/in/joy-ugbede-914aa0268",
     },
 ];
 

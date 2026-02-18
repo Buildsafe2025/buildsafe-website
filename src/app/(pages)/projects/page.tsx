@@ -1,6 +1,13 @@
 import ContactCard from "@/components/shared/ContactCard";
 import ProjectCard from "@/components/shared/ProjectCard";
 import { projects } from "@/utils/data/projectData";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects",
+  description:
+    "Explore our Portfolio of Innovative engineering and consulting solutions.",
+};
 
 const Page = () => {
   return (
@@ -25,13 +32,14 @@ const Page = () => {
             data-aos-delay="600"
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-7"
           >
-            {projects.map(({ header, description, scope, clientName }, idx) => (
+            {projects.map(({ header, description, scope, clientName, imgUrl }, idx) => (
               <ProjectCard
                 key={idx}
                 header={header}
                 description={description}
                 scope={scope}
                 clientName={clientName}
+                imgUrl={imgUrl}
               />
             ))}
           </div>
