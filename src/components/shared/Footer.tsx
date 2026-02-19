@@ -15,6 +15,7 @@ const Footer = () => {
                 alt="logo"
                 fill
                 style={{ objectFit: "contain" }}
+                unoptimized
               />
             </div>
 
@@ -30,6 +31,7 @@ const Footer = () => {
                       alt={label}
                       fill
                       style={{ objectFit: "contain" }}
+                      unoptimized
                     />
                   </div>
                 </Link>
@@ -45,7 +47,6 @@ const Footer = () => {
               <Link
                 key={idx}
                 href={href}
-                target="_blank"
                 className="text-grey hover:underline "
               >
                 {label}

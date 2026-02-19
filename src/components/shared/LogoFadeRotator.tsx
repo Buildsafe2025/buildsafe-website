@@ -30,7 +30,7 @@ const LogoFadeRotator = ({ groups, interval = 4000, className }: Props) => {
   return <ul className={`flex items-center justify-between transition-opacity duration-1000 ${visible ? "opacity-100" : "opacity-0"}`}>
     {groups[index].map((logo, idx)=>(
         <li key={idx} className=" bg-white p-4 mx-5 md:mx-10 relative w-25 h-22.5">
-                <Image src={logo} alt={logo.toString()} fill className={`opacity-78 hover:opacity-100 transition cursor-pointer object-contain ${className}`} />
+                <Image src={logo} alt={logo.toString()} fill className={`opacity-78 hover:opacity-100 transition cursor-pointer object-contain ${className}`} unoptimized/>
               </li>
     ))}
   </ul>;

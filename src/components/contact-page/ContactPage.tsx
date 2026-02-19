@@ -42,25 +42,10 @@ const ContactPage = () => {
     const form = e.target as HTMLFormElement;
 
     const formData = new FormData(form);
-
-    const firstName = formData.get("firstName") as string;
-    const lastName = formData.get("lastName") as string;
-    const email = formData.get("email") as string;
-    const phoneNumber = formData.get("phoneNumber") as string;
-    const service = formData.get("service") as string;
-    const details = formData.get("details") as string;
-
     try {
       const response = await fetch("/send-mail.php", {
         method: "POST",
-        body: new URLSearchParams({
-          firstName,
-          lastName,
-          email,
-          phoneNumber,
-          service,
-          details,
-        }).toString(),
+        body: formData
       });
 
       const isSuccess = await response.json();
@@ -105,6 +90,7 @@ const ContactPage = () => {
                     alt={`${iconUrl}-icon`}
                     fill
                     style={{ objectFit: "contain" }}
+                    unoptimized
                   />
                 </span>
               </div>
@@ -135,6 +121,7 @@ const ContactPage = () => {
                     alt={label}
                     fill
                     style={{ objectFit: "contain" }}
+                    unoptimized
                   />
                 </Link>
               </div>

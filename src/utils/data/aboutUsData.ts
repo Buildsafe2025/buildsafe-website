@@ -117,7 +117,7 @@ const teamMembers: teamMemberProp[] = [
     
     {
         name: "Oluwaseyi Ogunrinola",
-        role: "I.T Support",
+        role: "I.T Operations Manager",
         imgUrl: oluwaseyi,
         linkedIn: "https://www.linkedin.com/in/oluwaseyiogunrinola",
     },

@@ -65,6 +65,7 @@ const Header = () => {
               style={{
                 objectFit: "contain",
               }}
+              unoptimized
             />
           </Link>
 
@@ -96,6 +97,7 @@ const Header = () => {
               style={{
                 objectFit: "contain",
               }}
+              unoptimized
             />
           </Link>
           <button onClick={() => setOpen(!open)} className="text-2xl">☰</button>

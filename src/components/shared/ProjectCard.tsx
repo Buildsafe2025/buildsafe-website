@@ -11,7 +11,7 @@ const ProjectCard = ({
   return (
     <div className="custom-card group">
       <div className="h-65 relative overflow-hidden rounded-t-4xl">
-        <Image src={imgUrl} fill className="image-hover" alt={header} />
+        <Image src={imgUrl} fill className="image-hover" alt={header} unoptimized />
       </div>
       <div className="flex flex-col gap-4 p-5 font-montserrat">
         <p className="font-semibold text-lg">{header}</p>

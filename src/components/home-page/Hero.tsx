@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <section className="relative md:min-h-screen h-full py-30 md:py-0 flex md:items-center">
-        <Image src={heroImg} fill alt="Hero Image" className='bg-contain' />
+        <Image src={heroImg} fill alt="Hero Image" className='bg-contain' unoptimized />
 
         <div className="container h-full flex md:items-center relative">
           <div

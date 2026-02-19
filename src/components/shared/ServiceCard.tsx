@@ -10,6 +10,7 @@ const  ServiceCard = ({imgUrl, header, description}: serviceProp) => {
           fill
           className="image-hover"
           alt={header}
+          unoptimized
         />
       </div>
       <div className="flex flex-col gap-2 md:gap-4 p-5 font-montserrat">

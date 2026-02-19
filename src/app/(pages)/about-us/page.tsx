@@ -62,6 +62,7 @@ const Page = () => {
                 src={aboutUs}
                 alt="Vision"
                 className="object-cover h-full w-full"
+                unoptimized
               />
             </div>
           </div>
@@ -87,6 +88,7 @@ const Page = () => {
                   src={imgUrl!}
                   alt="Vision"
                   className="object-contain h-full w-full"
+                  unoptimized
                 />
               </div>
             </div>
@@ -108,6 +110,7 @@ const Page = () => {
                     alt={`icon-${idx + 1}`}
                     width={50}
                     height={50}
+                    unoptimized
                   />
                   <p className="font-semibold text-lg capitalize">{header}</p>
                   <p className="text-grey">{description}</p>
@@ -146,6 +149,7 @@ const Page = () => {
                       alt={name}
                       fill
                       className="rounded-full"
+                      unoptimized
                     />
                   </div>
                   <p className=" text-lg font-semibold capitalize">{name}</p>
@@ -155,6 +159,7 @@ const Page = () => {
                       src={"/icons/linkedIn-blue.svg"}
                       alt="linkedIn-icon"
                       fill
+                      unoptimized
                     />
                   </div>
                 </Link>

@@ -54,6 +54,7 @@ const Client = () => {
                       src={quoteIcon}
                       alt="icon"
                       className="size-6 w-full mx-auto"
+                      unoptimized
                     />
                     <p className="text-sm md:text-base">{quote}</p>
                   </div>
