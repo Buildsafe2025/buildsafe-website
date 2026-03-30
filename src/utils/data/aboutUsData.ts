@@ -110,14 +110,14 @@ const teamMembers: teamMemberProp[] = [
     },
     {
         name: "Mercy Echeruo",
-        role: "Head, Marketing & Communication",
+        role: "Office Manager",
         imgUrl: mercy,
         linkedIn: "https://www.linkedin.com/in/mercy-oluchi-echeruo-82843b77",
     },
     
     {
         name: "Oluwaseyi Ogunrinola",
-        role: "I.T Operations Manager",
+        role: "IT and Media Operations Manager",
         imgUrl: oluwaseyi,
         linkedIn: "https://www.linkedin.com/in/oluwaseyiogunrinola",
     },
@@ -129,4 +129,23 @@ const teamMembers: teamMemberProp[] = [
     },
 ];
 
-export { aboutUsContent, teamMembers, coreValues }
+const certifications: aboutUsProp[] = [
+    {
+        header: "Council for the Regulation of Engineering in Nigeria (COREN)",
+        descriptionList: ['COREN Number: EF. 1528', 'Official professional registration with the Council for the Regulation of Engineering in Nigeria.'],
+    },
+    {
+        header: "ISO 9001:2015 Certification",
+        descriptionList: ['ID: AFR 20241108 NIG Q BUI', 'Certified Quality Management System according to ISO standards.'],
+    },
+    {
+        header: "Ecovadis Sustainability Rating",
+        descriptionList: ['ID: QB380493', 'Rating: Gold Medal', 'Recognized for outstanding sustainability practices.'],
+    },
+    {
+        header: "Corporate Affairs Commission (CAC)",
+        descriptionList: ['RC NO: 744996', 'Registered and legally recognized corporate entity in Nigeria.'],
+    },
+]
+
+export { aboutUsContent, teamMembers, coreValues, certifications }

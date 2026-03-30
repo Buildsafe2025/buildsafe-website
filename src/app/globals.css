@@ -57,7 +57,7 @@
   }
 
   .btn-secondary {
-    @apply border border-light-grey rounded-2xl text-sm md:text-base text-black font-bold px-10 py-2  capitalize hover:bg-light-grey/10;
+    @apply border border-light-grey rounded-2xl text-xs sm:text-sm md:text-base text-black font-bold px-8 md:px-10 py-2  capitalize hover:bg-light-grey/10;
   }
 
   .custom-hover {

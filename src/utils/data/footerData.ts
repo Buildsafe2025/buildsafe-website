@@ -27,7 +27,7 @@ import { footerLinkProp } from "@/interfaces/interface";
       links: [
         {
           label: "Construction Engineering Consultancy",
-          href: "/services?tab=engineering_consultancy",
+          href: "/services?tab=construction_engineering_consultancy",
         },
         {
           label: "Project Management",

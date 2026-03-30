@@ -29,7 +29,8 @@ export type footerLinkProp = {
 
 export type aboutUsProp = {
   header: string;
-  description: string;
+  description?: string;
+  descriptionList?: string[];
   imgUrl?: StaticImageData;
   iconUrl?: string;
 };

@@ -4,6 +4,7 @@ import ContactCard from "@/components/shared/ContactCard";
 import aboutUs from "@public/images/about-us.png";
 import {
   aboutUsContent,
+  certifications,
   coreValues,
   teamMembers,
 } from "@/utils/data/aboutUsData";
@@ -121,6 +122,43 @@ const Page = () => {
 
           <div className="flex flex-col gap-2 md:gap-3">
             <p data-aos="fade-up" data-aos-duration="900" className="heading-2">
+              Certification and Regulatory Compliance
+            </p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="900"
+              className="font-montserrat"
+            >
+              BuildSafe Nigeria Limited operates in full compliance with
+              national and international standards, upholding certifications
+              that demonstrate our commitment to quality, integrity, and
+              sustainability.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-9">
+              {certifications.map(({ header, descriptionList }, idx) => (
+                <div
+                  key={idx}
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1100"
+                  className="border-light-grey border-[0.7px] rounded-xl flex flex-col gap-2 p-4"
+                >
+                  <p className="font-semibold text-lg capitalize">{header}</p>
+
+                  <div className="flex flex-col">
+                    {descriptionList?.map((list, i) => (
+                      <p key={i} className="text-grey">
+                        {list}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-2 md:gap-3">
+            <p data-aos="fade-up" data-aos-duration="900" className="heading-2">
               meet our team
             </p>
             <p
@@ -133,7 +171,7 @@ const Page = () => {
               construction endeavors.
             </p>
 
-            <div className="grid grid-col-1 md:grid-cols-4 lg:grid-cols-5 md:gap-x-10 gap-y-7.5 md:gap-y-15">
+            <div className="grid grid-col-1 md:grid-cols-4 md:gap-x-10 gap-y-7.5 md:gap-y-15">
               {teamMembers.map(({ name, role, linkedIn, imgUrl }, idx) => (
                 <Link
                   href={linkedIn}
