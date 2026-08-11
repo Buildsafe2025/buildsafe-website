@@ -140,7 +140,7 @@ const certifications: aboutUsProp[] = [
     },
     {
         header: "Ecovadis Sustainability Rating",
-        descriptionList: ['ID: QB380493', 'Rating: Gold Medal', 'Recognized for outstanding sustainability practices.'],
+        descriptionList: ['ID: QB380493', 'Rating: Platinum Medal', 'Recognized for outstanding sustainability practices.'],
     },
     {
         header: "Corporate Affairs Commission (CAC)",
