@@ -4,7 +4,6 @@ import { aboutUsProp, teamMemberProp } from "@/interfaces/interface";
 
 import cyprian from "@public/images/team/cyprian.png";
 import blessing from "@public/images/team/blessing.png";
-import chinemere from "@public/images/team/chinemere.png";
 import donatus from "@public/images/team/donatus.png";
 import emmanuel from "@public/images/team/emmanuel.png";
 import mercy from "@public/images/team/mercy.png";
@@ -13,6 +12,7 @@ import oluwaseyi from "@public/images/team/oluwaseyi.png";
 import peter from "@public/images/team/peter.png";
 import uyomi from "@public/images/team/uyomi.png";
 import blessingO from "@public/images/team/blessing-obiageri.png";
+import chuks from "@public/images/team/chuks.png";
 
 const aboutUsContent: aboutUsProp[] = [
     {
@@ -83,23 +83,23 @@ const teamMembers: teamMemberProp[] = [
         linkedIn: "https://www.linkedin.com/in/blessing-oduopara-10485777",
     },
     {
-        name: "Chinemere Nwadinobi",
+        name: "Uyomi. O Eya",
         role: "Head, Engineering & Project Management",
-        imgUrl: chinemere,
-        linkedIn: "https://www.linkedin.com/in/chinemerem-nwadinobi",
+        imgUrl: uyomi,
+        linkedIn: "https://www.linkedin.com/in/uyomi-eya-aa840a150",
     },
     
     {
-        name: "Emmanuel Eneh",
+        name: "Chuks Friday Ogeswe",
         role: "H.O.D Reality Capture",
-        imgUrl: emmanuel,
-        linkedIn: "https://www.linkedin.com/in/emmanuel-eneh-cswp",
+        imgUrl: chuks,
+        linkedIn: "https://www.linkedin.com/in/chuks-ogeswe",
     },
     {
-        name: "Uyomi. O Eya",
+        name: "Emmanuel Eneh",
         role: "Head, Research & Innovation",
-        imgUrl: uyomi,
-        linkedIn: "https://www.linkedin.com/in/uyomi-eya-aa840a150",
+        imgUrl: emmanuel,
+        linkedIn: "https://www.linkedin.com/in/emmanuel-eneh-cswp",
     },
     
     {
